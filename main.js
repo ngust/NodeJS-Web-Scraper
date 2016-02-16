@@ -10,10 +10,17 @@ request(url, function (error, response, body) {
     // console.log($('#ip').text());
 
     // var write = fs.createWriteStream("content.csv");
-    $('a').each(function(i,elem) {
-      console.log("i ",i);
-      console.log("http://substack.net" + elem.attribs['href']);
-    });
+
+    $('tr').each(function (){
+      var row = $(this);
+      var permissions = row.find('code').first().text();
+      var url = "http://substack.net/" + row.find('a').text();
+      var filetype = url.split('.').pop();
+      if (/.+\/$/.test(filetype)) {
+        filetype = "dir"
+      }
+      console.log(permissions, url, filetype);
+      });
   }
 })
 
