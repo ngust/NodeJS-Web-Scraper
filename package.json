@@ -1,0 +1,26 @@
+{
+  "name": "scraper",
+  "version": "0.0.1",
+  "description": "Web Scraper",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ngust/NodeJS-Web-Scraper.git"
+  },
+  "keywords": [
+    "scraper"
+  ],
+  "author": "ng",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ngust/NodeJS-Web-Scraper/issues"
+  },
+  "homepage": "https://github.com/ngust/NodeJS-Web-Scraper#readme",
+  "dependencies": {
+    "cheerio": "^0.20.0",
+    "request": "^2.69.0"
+  }
+}
